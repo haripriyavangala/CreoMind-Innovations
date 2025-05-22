@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creomind Innovations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+<header class="fixed w-full z-10 bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <img src="/logo.png" alt="Creomind Innovations" class="h-20 w-auto" />
+
+    <!-- Hamburger Button (Visible on small screens) -->
+    <button id="hamburger" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Home</a>
+      <a href="about.html" class="hover:text-blue-500">About</a>
+      <a href="services.html" class="hover:text-blue-500">Services</a>
+      <a href="testimonials.html" class="hover:text-blue-500">Testimonials</a>
+      <a href="certificate.html" class="hover:text-blue-500">Verify</a>
+      <a href="careers.html" class="hover:text-blue-500">Careers</a>
+      <a href="contact.html" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu (Initially Hidden) -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white shadow">
+    <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
+    <a href="about.html" class="block py-2 hover:text-blue-500">About</a>
+    <a href="services.html" class="block py-2 hover:text-blue-500">Services</a>
+    <a href="testimonials.html" class="block py-2 hover:text-blue-500">Testimonials</a>
+    <a href="certificate.html" class="block py-2 hover:text-blue-500">Verify</a>
+    <a href="careers.html" class="block py-2 hover:text-blue-500">Careers</a>
+    <a href="contact.html" class="block py-2 hover:text-blue-500">Contact</a>
+  </div>
+</header>
+
+<!-- Toggle Script -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- Hero Section -->
+   <!-- Fullscreen Slideshow -->
+<div class="relative overflow-hidden w-full h-screen">
+
+  <!-- Slider Wrapper -->
+  <div id="slider" class="flex transition-transform duration-1000 ease-in-out w-[400%] h-full">
+
+    <!-- Slide Template -->
+    <section class="w-full flex-shrink-0 bg-center bg-cover bg-no-repeat flex items-center justify-center px-4 text-white text-center"
+      style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1950&q=80');">
+      <div class="bg-black bg-opacity-50 py-12 px-6 rounded-lg max-w-2xl w-full">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Turning Ideas into Scalable Digital Solutions</h2>
+        <div class="flex flex-wrap justify-center gap-4 mt-6">
+          <a href="services.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Explore Our Services</a>
+          <a href="contact.html" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full flex-shrink-0 bg-center bg-cover bg-no-repeat flex items-center justify-center px-4 text-white text-center"
+      style="background-image: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=1950&q=80');">
+      <div class="bg-black bg-opacity-50 py-12 px-6 rounded-lg max-w-2xl w-full">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Empowering Brands Through Technology</h2>
+        <div class="flex flex-wrap justify-center gap-4 mt-6">
+          <a href="services.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Explore Our Services</a>
+          <a href="contact.html" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full flex-shrink-0 bg-center bg-cover bg-no-repeat flex items-center justify-center px-4 text-white text-center"
+      style="background-image: url('https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1950&q=80');">
+      <div class="bg-black bg-opacity-50 py-12 px-6 rounded-lg max-w-2xl w-full">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Innovating the Future of Digital Products</h2>
+        <div class="flex flex-wrap justify-center gap-4 mt-6">
+          <a href="services.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Explore Our Services</a>
+          <a href="contact.html" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full flex-shrink-0 bg-center bg-cover bg-no-repeat flex items-center justify-center px-4 text-white text-center"
+      style="background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1950&q=80');">
+      <div class="bg-black bg-opacity-50 py-12 px-6 rounded-lg max-w-2xl w-full">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Your Vision, Our Mission to Build</h2>
+        <div class="flex flex-wrap justify-center gap-4 mt-6">
+          <a href="services.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Explore Our Services</a>
+          <a href="contact.html" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- Auto-Slide Script -->
+<script>
+  let currentIndex = 0;
+  const totalSlides = 4;
+  const slider = document.getElementById('slider');
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 5000); // every 5 seconds
+</script>
+
+
+
+
+  <!-- About Section -->
+    <section class="bg-white py-16 px-6 sm:px-8 md:px-12 lg:px-16">
+    <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-4xl sm:text-4xl font-extrabold text-blue-700 mb-12">Who We Are</h3>
+        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+        At <span class="font-semibold text-blue-600">Creomind Innovations</span>, we empower startups and businesses by building technology-driven products.
+        Our mission is to bring ideas to life with innovation, quality, and speed.
+        </p>
+    </div>
+    </section>
+
+
+    <!-- Core Services -->
+    <section class="py-10 px-6 sm:px-10 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+        <h3 class="text-4xl font-extrabold text-blue-700 mb-12">Our Core Services</h3>
+
+        <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        
+        <!-- Service Card -->
+        <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out text-center">
+            <div class="flex justify-center mb-4 animate-bounce">
+            <!-- Web Dev Icon -->
+            <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2H3V4zM3 8h18v10a1 1 0 01-1 1H4a1 1 0 01-1-1V8z"/>
+            </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">Web Development</h4>
+            <p class="text-gray-600">Responsive, CMS, API integrations</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out text-center">
+            <div class="flex justify-center mb-4 animate-spin-slow">
+            <!-- App Dev Icon -->
+            <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M7 4h10v16H7z"/>
+            </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">App Development</h4>
+            <p class="text-gray-600">Android, iOS, Flutter applications</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out text-center">
+            <div class="flex justify-center mb-4 animate-pulse">
+            <!-- UI/UX Icon -->
+            <svg class="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+            </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">UI/UX Design</h4>
+            <p class="text-gray-600">Figma-based modern UI/UX</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out text-center">
+            <div class="flex justify-center mb-4 animate-wiggle">
+            <!-- Branding Icon -->
+            <svg class="w-12 h-12 text-pink-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5v14"/>
+            </svg>
+            </div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">Branding & Identity</h4>
+            <p class="text-gray-600">Logos, Color systems, Visual Identity</p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- Custom Animations -->
+    <style>
+    @keyframes wiggle {
+        0%, 100% { transform: rotate(-3deg); }
+        50% { transform: rotate(3deg); }
+    }
+    .animate-wiggle {
+        animation: wiggle 1s infinite;
+    }
+
+    .animate-spin-slow {
+        animation: spin 3s linear infinite;
+    }
+    </style>
+
+
+
+  <!-- Client Highlights -->
+<section class="py-0 bg-gray-50 px-4 sm:px-10">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-extrabold text-blue-800 mb-12">Client Highlights</h3>
+    <p class="text-lg text-gray-700 mb-10">Hear what our Indian clients have to say about our services.</p>
+
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Testimonial Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300 text-left">
+        <p class="text-gray-600 italic mb-4">“Creomind Innovations helped us scale our business website beautifully. Their team was highly professional and delivered on time.”</p>
+        <div class="flex items-center gap-4">
+          <img src="https://i.pravatar.cc/50?img=12" alt="Client" class="w-12 h-12 rounded-full border-2 border-blue-600">
+          <div>
+            <p class="font-semibold text-gray-800">Ravi Sharma</p>
+            <p class="text-sm text-gray-500">Founder, Sharma Textiles, Delhi</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300 text-left">
+        <p class="text-gray-600 italic mb-4">“Their mobile app development exceeded expectations. User-friendly interface and flawless functionality.”</p>
+        <div class="flex items-center gap-4">
+          <img src="https://i.pravatar.cc/50?img=36" alt="Client" class="w-12 h-12 rounded-full border-2 border-green-600">
+          <div>
+            <p class="font-semibold text-gray-800">Ananya Rao</p>
+            <p class="text-sm text-gray-500">CTO, GreenFarmTech, Bengaluru</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300 text-left">
+        <p class="text-gray-600 italic mb-4">“We were impressed with their UI/UX design. Our digital platform now looks and feels world-class.”</p>
+        <div class="flex items-center gap-4">
+          <img src="https://i.pravatar.cc/50?img=24" alt="Client" class="w-12 h-12 rounded-full border-2 border-purple-600">
+          <div>
+            <p class="font-semibold text-gray-800">Sundar Iyer</p>
+            <p class="text-sm text-gray-500">Managing Director, EduSpark, Chennai</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Portfolio Slider -->
+<section class="py-10 px-4 sm:px-10 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-4xl font-extrabold text-blue-800 mb-10 text-center">Our Work</h3>
+
+    <!-- Responsive Scrollable Slider -->
+    <div class="flex flex-col md:flex-row md:overflow-x-auto gap-6 pb-4 scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-blue-100">
+      
+      <!-- Project Card 1 -->
+      <div class="w-full md:min-w-[280px] md:max-w-xs bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Platform" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h4 class="text-xl font-semibold text-gray-800">E-commerce Platform</h4>
+        <p class="text-sm text-gray-600 mt-2">Built with React and Firebase for a fashion brand.</p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="w-full md:min-w-[280px] md:max-w-xs bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600" alt="School Management App" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h4 class="text-xl font-semibold text-gray-800">School Management App</h4>
+        <p class="text-sm text-gray-600 mt-2">Mobile-first app for managing attendance and grades.</p>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="w-full md:min-w-[280px] md:max-w-xs bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+        <img src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthcare Dashboard" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h4 class="text-xl font-semibold text-gray-800">Healthcare Dashboard</h4>
+        <p class="text-sm text-gray-600 mt-2">Analytics tool for hospitals using Next.js & Tailwind.</p>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="w-full md:min-w-[280px] md:max-w-xs bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+        <img src="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logistics Mobile App" class="rounded-lg mb-4 w-full h-40 object-cover">
+        <h4 class="text-xl font-semibold text-gray-800">Logistics Mobile App</h4>
+        <p class="text-sm text-gray-600 mt-2">Flutter-based app for tracking deliveries in real time.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact CTA -->
+<section class="bg-blue-600 text-white text-center py-16 px-6">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-3xl sm:text-4xl font-extrabold mb-6 leading-snug">Ready to build something amazing?</h3>
+    <p class="text-lg mb-8 text-blue-100">Let’s bring your vision to life with innovation and excellence.</p>
+    <a href="contact.html" class="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-50 transition duration-300 ease-in-out">
+      Contact Us
+    </a>
+  </div>
+</section>
+
+<!-- footer -->
+  <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- Footer Section Start -->
+<footer class="bg-gray-800 text-white pt-10 px-4 animate-fadeIn">
+  <div class="max-w-6xl mx-auto space-y-10">
+
+    <!-- Top Section: Contact Info + Map -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-blue-400 mb-4">Contact Information</h3>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li><i class="fas fa-envelope mr-2 text-blue-400"></i> <strong>Email:</strong> office.creomindinnovations@gmail.com</li>
+          <li><i class="fas fa-phone-alt mr-2 text-blue-400"></i> <strong>Phone:</strong> +91-8247386453</li>
+          <li><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> 
+            <strong>Address:</strong> Start Up Cell, MITS Incubation Center,<br />
+            Angallu, Madanapalle, Andhra Pradesh - 517325.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-64 md:h-56 lg:h-64"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4623694222787!2d78.4759637748537!3d13.629614786749606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1747402193682!5m2!1sen!2sin"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  
+
+    <!-- Bottom Section: Links + Logo + Social Icons -->
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 text-center md:text-left">
+      
+      <!-- Logo and Copyright -->
+      <div>
+        <h4 class="text-xl font-bold text-white">Creomind Innovations</h4>
+        <p class="text-sm text-gray-400">&copy; 2025. All rights reserved.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="space-x-6">
+        <a href="about.html" class="text-sm hover:text-blue-400 transition duration-300">About</a>
+        <a href="services.html" class="text-sm hover:text-blue-400 transition duration-300">Services</a>
+        <a href="careers.html" class="text-sm hover:text-blue-400 transition duration-300">Careers</a>
+        <a href="contact.html" class="text-sm hover:text-blue-400 transition duration-300">Contact</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex space-x-4 text-xl">
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/creomind-innovations" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Custom Fade-in Animation (if not using animate.css) -->
+<style>
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable dragging content
+  document.addEventListener('dragstart', event => event.preventDefault());
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I or J or C
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + U, Ctrl + S, Ctrl + P, Ctrl + C
+    if ((e.ctrlKey || e.metaKey) && ['U', 'S', 'P', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + A (select all)
+    if ((e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'A') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable text selection
+  document.addEventListener('selectstart', event => event.preventDefault());
+</script>
+
+
+</body>
+</html>
