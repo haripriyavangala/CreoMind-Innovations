@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creomind Innovations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+<header class="fixed w-full z-10 bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <img src="/logo.png" alt="Creomind Innovations" class="h-20 w-auto" />
+
+    <!-- Hamburger Button (Visible on small screens) -->
+    <button id="hamburger" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <a href="about.html" class="hover:text-blue-500">About</a>
+      <a href="services.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Services</a>
+      <a href="testimonials.html" class="hover:text-blue-500">Testimonials</a>
+      <a href="certificate.html" class="hover:text-blue-500">Verify</a>
+      <a href="careers.html" class="hover:text-blue-500">Careers</a>
+      <a href="contact.html" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu (Initially Hidden) -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white shadow">
+    <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
+    <a href="about.html" class="block py-2 hover:text-blue-500">About</a>
+    <a href="services.html" class="block py-2 hover:text-blue-500">Services</a>
+    <a href="testimonials.html" class="block py-2 hover:text-blue-500">Testimonials</a>
+    <a href="certificate.html" class="block py-2 hover:text-blue-500">Verify</a>
+    <a href="careers.html" class="block py-2 hover:text-blue-500">Careers</a>
+    <a href="contact.html" class="block py-2 hover:text-blue-500">Contact</a>
+  </div>
+</header>
+
+<!-- Toggle Script -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+
+  <!-- ====== Services Section ====== -->
+  <section class="py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Web Development -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-code"></i></div>
+          <h3 class="text-xl font-bold mb-2">Web Development</h3>
+          <ul class="list-disc list-inside text-gray-600 text-sm">
+            <li>Static & Dynamic Sites</li>
+            <li>CMS-based Platforms</li>
+            <li>Custom APIs</li>
+          </ul>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-green-500 text-4xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="text-xl font-bold mb-2">Mobile App Development</h3>
+          <ul class="list-disc list-inside text-gray-600 text-sm">
+            <li>Android & iOS Apps</li>
+            <li>Flutter Cross-platform</li>
+          </ul>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-purple-500 text-4xl mb-4"><i class="fas fa-pencil-ruler"></i></div>
+          <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+          <ul class="list-disc list-inside text-gray-600 text-sm">
+            <li>Figma Prototypes</li>
+            <li>Design Systems</li>
+            <li>Wireframes & Flows</li>
+          </ul>
+        </div>
+
+        <!-- Branding & Logo Design -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-pink-500 text-4xl mb-4"><i class="fas fa-paint-brush"></i></div>
+          <h3 class="text-xl font-bold mb-2">Branding & Logo Design</h3>
+          <p class="text-gray-600 text-sm">Professional branding, logo design, and complete visual identity development.</p>
+        </div>
+
+        <!-- Social Media Management -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-share-alt"></i></div>
+          <h3 class="text-xl font-bold mb-2">Social Media Management</h3>
+          <ul class="list-disc list-inside text-gray-600 text-sm">
+            <li>Content Planning & Scheduling</li>
+            <li>Analytics & Performance Reports</li>
+            <li>Engagement & Community Growth</li>
+          </ul>
+        </div>
+
+        <!-- Custom Automation -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-yellow-500 text-4xl mb-4"><i class="fas fa-cogs"></i></div>
+          <h3 class="text-xl font-bold mb-2">Custom Automation</h3>
+          <ul class="list-disc list-inside text-gray-600 text-sm">
+            <li>Google Sheets Workflows</li>
+            <li>Zapier & No Code Tools</li>
+            <li>AppSheet Apps</li>
+          </ul>
+        </div>
+
+        <!-- Internships -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-indigo-500 text-4xl mb-4"><i class="fas fa-user-graduate"></i></div>
+          <h3 class="text-xl font-bold mb-2">Internships</h3>
+          <p class="text-gray-600 text-sm">Real-time project-based internships for students in Web Development, App Development, Data Analysis, and more.</p>
+        </div>
+
+        <!-- Workshops -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-red-500 text-4xl mb-4"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3 class="text-xl font-bold mb-2">Workshops</h3>
+          <p class="text-gray-600 text-sm">Interactive workshops on cutting-edge technologies like AI, ML, Web3, Flutter, and UI/UX conducted online and offline.</p>
+        </div>
+
+        <!-- Courses -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+          <div class="text-teal-500 text-4xl mb-4"><i class="fas fa-book-open"></i></div>
+          <h3 class="text-xl font-bold mb-2">Courses</h3>
+          <p class="text-gray-600 text-sm">Structured beginner-to-advanced level courses with certificates in Full Stack Development, Data Science, Java, Python & more.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- Footer Section Start -->
+<footer class="bg-gray-800 text-white pt-10 px-4 animate-fadeIn">
+  <div class="max-w-6xl mx-auto space-y-10">
+
+    <!-- Top Section: Contact Info + Map -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-blue-400 mb-4">Contact Information</h3>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li><i class="fas fa-envelope mr-2 text-blue-400"></i> <strong>Email:</strong> office.creomindinnovations@gmail.com</li>
+          <li><i class="fas fa-phone-alt mr-2 text-blue-400"></i> <strong>Phone:</strong> +91-8247386453</li>
+          <li><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> 
+            <strong>Address:</strong> Start Up Cell, MITS Incubation Center,<br />
+            Angallu, Madanapalle, Andhra Pradesh - 517325.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-64 md:h-56 lg:h-64"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4623694222787!2d78.4759637748537!3d13.629614786749606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1747402193682!5m2!1sen!2sin"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  
+
+    <!-- Bottom Section: Links + Logo + Social Icons -->
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 text-center md:text-left">
+      
+      <!-- Logo and Copyright -->
+      <div>
+        <h4 class="text-xl font-bold text-white">Creomind Innovations</h4>
+        <p class="text-sm text-gray-400">&copy; 2025. All rights reserved.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="space-x-6">
+        <a href="about.html" class="text-sm hover:text-blue-400 transition duration-300">About</a>
+        <a href="services.html" class="text-sm hover:text-blue-400 transition duration-300">Services</a>
+        <a href="careers.html" class="text-sm hover:text-blue-400 transition duration-300">Careers</a>
+        <a href="contact.html" class="text-sm hover:text-blue-400 transition duration-300">Contact</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex space-x-4 text-xl">
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/creomind-innovations" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Custom Fade-in Animation (if not using animate.css) -->
+<style>
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable dragging content
+  document.addEventListener('dragstart', event => event.preventDefault());
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I or J or C
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + U, Ctrl + S, Ctrl + P, Ctrl + C
+    if ((e.ctrlKey || e.metaKey) && ['U', 'S', 'P', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + A (select all)
+    if ((e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'A') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable text selection
+  document.addEventListener('selectstart', event => event.preventDefault());
+</script>
+
+
+</body>
+</html>
