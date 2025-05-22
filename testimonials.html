@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creomind Innovations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+<header class="fixed w-full z-10 bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <img src="/logo.png" alt="Creomind Innovations" class="h-20 w-auto" />
+
+    <!-- Hamburger Button (Visible on small screens) -->
+    <button id="hamburger" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <a href="about.html" class="hover:text-blue-500">About</a>
+      <a href="services.html" class="hover:text-blue-500">Services</a>
+      <a href="testimonials.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Testimonials</a>
+      <a href="certificate.html" class="hover:text-blue-500">Verify</a>
+      <a href="careers.html" class="hover:text-blue-500">Careers</a>
+      <a href="contact.html" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu (Initially Hidden) -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white shadow">
+    <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
+    <a href="about.html" class="block py-2 hover:text-blue-500">About</a>
+    <a href="services.html" class="block py-2 hover:text-blue-500">Services</a>
+    <a href="testimonials.html" class="block py-2 hover:text-blue-500">Testimonials</a>
+    <a href="certificate.html" class="block py-2 hover:text-blue-500">Verify</a>
+    <a href="careers.html" class="block py-2 hover:text-blue-500">Careers</a>
+    <a href="contact.html" class="block py-2 hover:text-blue-500">Contact</a>
+  </div>
+</header>
+
+<!-- Toggle Script -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+    <!-- Clients Logo Section -->
+    <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+      animation: marquee 20s linear infinite;
+      display: flex;
+      width: 200%; /* Enough space to allow seamless loop */
+    }
+
+    .marquee-track > img {
+      margin-right: 3rem; /* spacing between images */
+    }
+  </style>
+  <!-- Section with Header and Marquee -->
+  <section class="bg-gray-0 py-28 overflow-hidden">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-blue-700">Our Clients & Testimonials</h2>
+      <p class="text-2xl text-blue-600 mt-2">Trusted by companies worldwide</p>
+    </div>
+
+    <!-- Marquee Logo Slider -->
+    <div class="relative w-full overflow-hidden">
+      <div class="animate-marquee marquee-track items-center">
+        <!-- Logo Set (duplicated for infinite scroll) -->
+        <img src="https://img.freepik.com/free-vector/set-company-logo-design-ideas-vector_53876-43019.jpg" alt="Company Logo 1" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/abstract-company-logo_53876-43469.jpg" alt="Company Logo 2" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="Company Logo 3" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_53876-43020.jpg" alt="Company Logo 4" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/set-company-logo-design-ideas-vector_53876-43019.jpg" alt="Company Logo 5" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/abstract-company-logo_53876-43469.jpg" alt="Company Logo 6" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="Company Logo 7" class="h-16" />
+        <img src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_53876-43020.jpg" alt="Company Logo 8" class="h-16" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-white py-0 px-6 pb-10">
+    <h2 class="text-2xl text-blue-600 text-center mt-2">What Our Clients Say</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Testimonial 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md fade-in">
+        <img src="https://img.freepik.com/free-vector/speech-bubble-testimonial-concept_23-2147816015.jpg" alt="Testimonial 1" class="w-full h-40 object-cover rounded mb-4" />
+        <p class="text-gray-700 italic">"Working with this team was a game-changer for our business."</p>
+        <p class="mt-4 font-bold text-indigo-700">— Alex Morgan, CEO at TechNova</p>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md fade-in">
+        <img src="https://img.freepik.com/free-vector/social-media-post-content-remark-template-testimonial-design_23-2147816016.jpg" alt="Testimonial 2" class="w-full h-40 object-cover rounded mb-4" />
+        <p class="text-gray-700 italic">"Their dedication and expertise exceeded our expectations."</p>
+        <p class="mt-4 font-bold text-indigo-700">— Jamie Lee, Marketing Director at BrightIdeas</p>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md fade-in">
+        <img src="https://img.freepik.com/free-vector/testimonial-review-template-star-rating-remark_23-2147816017.jpg" alt="Testimonial 3" class="w-full h-40 object-cover rounded mb-4" />
+        <p class="text-gray-700 italic">"A reliable partner who delivers quality results every time."</p>
+        <p class="mt-4 font-bold text-indigo-700">— Sam Patel, Founder at InnovateX</p>
+      </div>
+      <!-- Testimonial 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md fade-in">
+        <img src="https://img.freepik.com/free-vector/speech-bubble-testimonial-concept_23-2147816015.jpg" alt="Testimonial 1" class="w-full h-40 object-cover rounded mb-4" />
+        <p class="text-gray-700 italic">"Working with this team was a game-changer for our business."</p>
+        <p class="mt-4 font-bold text-indigo-700">— Alex Morgan, CEO at TechNova</p>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md fade-in">
+        <img src="https://img.freepik.com/free-vector/social-media-post-content-remark-template-testimonial-design_23-2147816016.jpg" alt="Testimonial 2" class="w-full h-40 object-cover rounded mb-4" />
+        <p class="text-gray-700 italic">"Their dedication and expertise exceeded our expectations."</p>
+        <p class="mt-4 font-bold text-indigo-700">— Jamie Lee, Marketing Director at BrightIdeas</p>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md fade-in">
+        <img src="https://img.freepik.com/free-vector/testimonial-review-template-star-rating-remark_23-2147816017.jpg" alt="Testimonial 3" class="w-full h-40 object-cover rounded mb-4" />
+        <p class="text-gray-700 italic">"A reliable partner who delivers quality results every time."</p>
+        <p class="mt-4 font-bold text-indigo-700">— Sam Patel, Founder at InnovateX</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Impact in Numbers -->
+  <section class="py-12 px-6 bg-indigo-50 ">
+    <h2 class="text-2xl font-semibold text-center mb-8">Our Impact in Numbers</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+      <div class="fade-in">
+        <img src="https://img.freepik.com/free-vector/10-steps-infographic-flowchart-design-template_23-2148819604.jpg" alt="Projects Completed" class="mx-auto h-24 mb-4" />
+        <h3 class="text-3xl font-bold text-indigo-700">150+</h3>
+        <p class="text-gray-600">Projects Completed</p>
+      </div>
+      <div class="fade-in">
+        <img src="https://img.freepik.com/free-vector/timeline-infographic-different-periods-time_23-2148819605.jpg" alt="Years in Business" class="mx-auto h-24 mb-4" />
+        <h3 class="text-3xl font-bold text-indigo-700">10</h3>
+        <p class="text-gray-600">Years in Business</p>
+      </div>
+      <div class="fade-in">
+        <img src="https://img.freepik.com/free-vector/circular-bullet-points-numbers-one-twelve_23-2148819606.jpg" alt="Global Clients" class="mx-auto h-24 mb-4" />
+        <h3 class="text-3xl font-bold text-indigo-700">25+</h3>
+        <p class="text-gray-600">Global Clients</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+<footer class="bg-gray-800 text-white pt-10 px-4 animate-fadeIn">
+  <div class="max-w-6xl mx-auto space-y-10">
+
+    <!-- Top Section: Contact Info + Map -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-blue-400 mb-4">Contact Information</h3>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li><i class="fas fa-envelope mr-2 text-blue-400"></i> <strong>Email:</strong> office.creomindinnovations@gmail.com</li>
+          <li><i class="fas fa-phone-alt mr-2 text-blue-400"></i> <strong>Phone:</strong> +91-8247386453</li>
+          <li><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> 
+            <strong>Address:</strong> Start Up Cell, MITS Incubation Center,<br />
+            Angallu, Madanapalle, Andhra Pradesh - 517325.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-64 md:h-56 lg:h-64"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4623694222787!2d78.4759637748537!3d13.629614786749606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1747402193682!5m2!1sen!2sin"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  
+
+    <!-- Bottom Section: Links + Logo + Social Icons -->
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 text-center md:text-left">
+      
+      <!-- Logo and Copyright -->
+      <div>
+        <h4 class="text-xl font-bold text-white">Creomind Innovations</h4>
+        <p class="text-sm text-gray-400">&copy; 2025. All rights reserved.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="space-x-6">
+        <a href="about.html" class="text-sm hover:text-blue-400 transition duration-300">About</a>
+        <a href="services.html" class="text-sm hover:text-blue-400 transition duration-300">Services</a>
+        <a href="careers.html" class="text-sm hover:text-blue-400 transition duration-300">Careers</a>
+        <a href="contact.html" class="text-sm hover:text-blue-400 transition duration-300">Contact</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex space-x-4 text-xl">
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/creomind-innovations" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Custom Fade-in Animation (if not using animate.css) -->
+<style>
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable dragging content
+  document.addEventListener('dragstart', event => event.preventDefault());
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I or J or C
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + U, Ctrl + S, Ctrl + P, Ctrl + C
+    if ((e.ctrlKey || e.metaKey) && ['U', 'S', 'P', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + A (select all)
+    if ((e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'A') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable text selection
+  document.addEventListener('selectstart', event => event.preventDefault());
+</script>
+
+
+</body>
+</html>
