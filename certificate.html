@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creomind Innovations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="text-gray-800 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1950&q=80');">
+
+  <!-- Navbar -->
+<header class="fixed w-full z-10 bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <img src="/logo.png" alt="Creomind Innovations" class="h-20 w-auto" />
+
+    <!-- Hamburger Button (Visible on small screens) -->
+    <button id="hamburger" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <a href="about.html" class="hover:text-blue-500">About</a>
+      <a href="services.html" class="hover:text-blue-500">Services</a>
+      <a href="testimonials.html" class="hover:text-blue-500">Testimonials</a>
+      <a href="certificate.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Verify</a>
+      <a href="careers.html" class="hover:text-blue-500">Careers</a>
+      <a href="contact.html" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu (Initially Hidden) -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white shadow">
+    <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
+    <a href="about.html" class="block py-2 hover:text-blue-500">About</a>
+    <a href="services.html" class="block py-2 hover:text-blue-500">Services</a>
+    <a href="testimonials.html" class="block py-2 hover:text-blue-500">Testimonials</a>
+    <a href="certificate.html" class="block py-2 hover:text-blue-500">Verify</a>
+    <a href="careers.html" class="block py-2 hover:text-blue-500">Careers</a>
+    <a href="contact.html" class="block py-2 hover:text-blue-500">Contact</a>
+  </div>
+</header>
+
+<!-- Toggle Script -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center py-36">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
+      <h1 class="text-2xl font-bold text-indigo-700 mb-6">🎓 Certificate Verification</h1>
+
+      <!-- Input Field -->
+      <input
+        id="certIdInput"
+        type="text"
+        placeholder="Enter Certificate ID"
+        class="w-full px-4 py-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      />
+
+      <!-- Verify Button -->
+      <button
+        onclick="verifyCertificate()"
+        class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition duration-300"
+      >
+        Verify
+      </button>
+
+      <!-- Success Section -->
+      <div id="resultSection" class="mt-8 hidden animate-fade-in">
+        <div class="bg-green-100 border border-green-300 text-green-800 p-4 rounded shadow">
+          <p><strong>Certificate ID:</strong> <span id="resultId"></span></p>
+          <p><strong>Name:</strong> <span id="resultName"></span></p>
+          <p><strong>Issued On:</strong> <span id="resultDate"></span></p>
+          <p><strong>Course:</strong> <span id="resultCourse"></span></p>
+          <p><strong>Status:</strong> <span class="text-green-700 font-semibold">✅ Verified</span></p>
+        </div>
+      </div>
+
+      <!-- Error Section -->
+      <div id="errorSection" class="mt-8 hidden text-red-600 font-medium">
+        ❌ Certificate not found. Please check the ID and try again.
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section Start -->
+  <footer class="bg-gray-800 text-white pt-10 px-4 animate-fadeIn">
+    <div class="max-w-6xl mx-auto space-y-10">
+
+      <!-- Top Section: Contact Info + Map -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-2xl font-bold text-blue-400 mb-4">Contact Information</h3>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li><i class="fas fa-envelope mr-2 text-blue-400"></i> <strong>Email:</strong> office.creomindinnovations@gmail.com</li>
+            <li><i class="fas fa-phone-alt mr-2 text-blue-400"></i> <strong>Phone:</strong> +91-8247386453</li>
+            <li><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> 
+              <strong>Address:</strong> Start Up Cell, MITS Incubation Center,<br />
+              Angallu, Madanapalle, Andhra Pradesh - 517325.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            class="w-full h-64 md:h-56 lg:h-64"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4623694222787!2d78.4759637748537!3d13.629614786749606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1747402193682!5m2!1sen!2sin"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Links + Logo + Social Icons -->
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 text-center md:text-left">
+        
+        <!-- Logo and Copyright -->
+        <div>
+          <h4 class="text-xl font-bold text-white">Creomind Innovations</h4>
+          <p class="text-sm text-gray-400">&copy; 2025. All rights reserved.</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="space-x-6">
+          <a href="about.html" class="text-sm hover:text-blue-400 transition duration-300">About</a>
+          <a href="services.html" class="text-sm hover:text-blue-400 transition duration-300">Services</a>
+          <a href="careers.html" class="text-sm hover:text-blue-400 transition duration-300">Careers</a>
+          <a href="contact.html" class="text-sm hover:text-blue-400 transition duration-300">Contact</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-4 text-xl">
+          <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/creomind-innovations" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const dummyCertificates = {
+      "CERT123": {
+        id: "CERT123",
+        name: "Alice Johnson",
+        date: "June 12, 2024",
+        course: "Full Stack Development"
+      },
+      "CERT456": {
+        id: "CERT456",
+        name: "Bob Smith",
+        date: "July 1, 2024",
+        course: "Data Analytics Internship"
+      }
+    };
+
+    function verifyCertificate() {
+      const certId = document.getElementById("certIdInput").value.trim().toUpperCase();
+      const resultSection = document.getElementById("resultSection");
+      const errorSection = document.getElementById("errorSection");
+
+      if (dummyCertificates[certId]) {
+        const cert = dummyCertificates[certId];
+        document.getElementById("resultId").innerText = cert.id;
+        document.getElementById("resultName").innerText = cert.name;
+        document.getElementById("resultDate").innerText = cert.date;
+        document.getElementById("resultCourse").innerText = cert.course;
+
+        resultSection.classList.remove("hidden");
+        errorSection.classList.add("hidden");
+      } else {
+        resultSection.classList.add("hidden");
+        errorSection.classList.remove("hidden");
+      }
+    }
+  </script>
+  <script>
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable dragging content
+  document.addEventListener('dragstart', event => event.preventDefault());
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I or J or C
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + U, Ctrl + S, Ctrl + P, Ctrl + C
+    if ((e.ctrlKey || e.metaKey) && ['U', 'S', 'P', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + A (select all)
+    if ((e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'A') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable text selection
+  document.addEventListener('selectstart', event => event.preventDefault());
+</script>
+
+
+</body>
+</html>
