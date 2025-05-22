@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creomind Innovations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+  </style>
+
+  <script defer>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans overflow-x-hidden">
+
+    
+  <!-- Navbar -->
+  <header class="fixed w-full z-10 bg-white shadow-md transition duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+    <img src="/logo.png" alt="Creomind Innovations" class="h-20 w-auto" />
+
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-lg font-medium">
+        <a href="index.html" class="hover:text-blue-500 transition duration-200">Home</a>
+        <a href="about.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">About</a>
+        <a href="services.html" class="hover:text-blue-500 transition duration-200">Services</a>
+        <a href="testimonials.html" class="hover:text-blue-500 transition duration-200">Testimonials</a>
+        <a href="certificate.html" class="hover:text-blue-500 transition duration-200">Verify</a>
+        <a href="careers.html" class="hover:text-blue-500 transition duration-200">Careers</a>
+        <a href="contact.html" class="hover:text-blue-500 transition duration-200">Contact</a>
+      </nav>
+
+      <!-- Hamburger Button -->
+      <button class="md:hidden text-gray-800 focus:outline-none" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow text-base font-medium">
+      <a href="index.html" class="block hover:text-blue-500 transition duration-200">Home</a>
+      <a href="about.html" class="block text-blue-600 font-semibold">About</a>
+      <a href="services.html" class="block hover:text-blue-500 transition duration-200">Services</a>
+      <a href="testimonials.html" class="block hover:text-blue-500 transition duration-200">Testimonials</a>
+      <a href="certificate.html" class="block hover:text-blue-500 transition duration-200">Verify</a>
+      <a href="careers.html" class="block hover:text-blue-500 transition duration-200">Careers</a>
+      <a href="contact.html" class="block hover:text-blue-500 transition duration-200">Contact</a>
+    </div>
+  </header>
+
+  <!-- About Hero Section -->
+  <section class="pt-28 pb-12 bg-white-50 text-center px-4 animate-fadeIn">
+    <h2 class="text-4xl font-bold mb-4 text-blue-700">About Creomind Innovations</h2>
+    <p class="text-lg max-w-3xl mx-auto text-justify text-gray-600">CreoMind Innovations is a dynamic service-based startup founded in January 2024. Initially focused on EdTech, we have expanded into Web Development, Mobile App Development, and Digital Solutions for institutions and businesses. Our mission is to deliver impactful digital experiences and foster young tech talent through real-time projects and internships.</p>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="py-6 px-4 max-w-6xl mx-auto animate-fadeIn">
+    <h3 class="text-2xl font-bold mb-4 text-blue-700">Our Vision & Mission</h3>
+    <p class="mb-6 text-gray-700 leading-relaxed">To become a leading force in building future-ready tech solutions and nurturing the next generation of skilled professionals in India.<br><hr><br> To empower organizations and students with practical, scalable, and innovative digital solutions, while creating an ecosystem of learning and collaboration.</p>
+  </section>
+
+  <!-- Founder's Message -->
+  <section class="py-6 bg-white-50 px-4 max-w-6xl mx-auto animate-fadeIn">
+    <h3 class="text-2xl font-bold mb-4 text-blue-700">Founder's Message</h3>
+    <p class="text-gray-700 italic">"At CreoMind Innovations, we believe in growth through innovation and collaboration. What started as a vision to simplify education through technology is now a growing community of creators, problem-solvers, and changemakers. We aim to build not just projects, but people."<br><br>
+    <strong>Jaganmohan Reddy Bondala, Founder & CEO</strong><br></p>
+  </section>
+
+  <!-- Our Journey -->
+  <section class="py-6 px-4 max-w-6xl mx-auto animate-fadeIn">
+    <h3 class="text-2xl font-bold mb-6 text-blue-700">Our Journey</h3>
+    <ul class="space-y-4 text-gray-700">
+      <li><strong>2021:</strong> Conceptualized and founded with a vision to innovate.</li>
+      <li><strong>2022:</strong> Delivered 10+ successful digital projects.</li>
+      <li><strong>2023:</strong> Expanded our team and services globally.</li>
+      <li><strong>2024:</strong> Introduced internship and automation services.</li>
+    </ul>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="py-12 bg-white-50 px-4 max-w-6xl mx-auto animate-fadeIn">
+    <h3 class="text-2xl font-bold mb-6 text-blue-700">Our Approach</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+      <div class="transition duration-300 hover:bg-white hover:shadow p-4 rounded-lg">
+        <h4 class="font-semibold text-lg mb-2 text-green-700">Customer-Centric</h4>
+        <p>We listen carefully, adapt quickly, and build exactly what our clients need.</p>
+      </div>
+      <div class="transition duration-300 hover:bg-white hover:shadow p-4 rounded-lg">
+        <h4 class="font-semibold text-lg mb-2 text-green-700">Agile & Scalable</h4>
+        <p>We work in iterative models, ensuring quality and flexibility throughout the process.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- footer -->
+  <!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- Footer Section Start -->
+<footer class="bg-gray-800 text-white pt-10 px-4 animate-fadeIn">
+  <div class="max-w-6xl mx-auto space-y-10">
+
+    <!-- Top Section: Contact Info + Map -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-blue-400 mb-4">Contact Information</h3>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li><i class="fas fa-envelope mr-2 text-blue-400"></i> <strong>Email:</strong> office.creomindinnovations@gmail.com</li>
+          <li><i class="fas fa-phone-alt mr-2 text-blue-400"></i> <strong>Phone:</strong> +91-8247386453</li>
+          <li><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> 
+            <strong>Address:</strong> Start Up Cell, MITS Incubation Center,<br />
+            Angallu, Madanapalle, Andhra Pradesh - 517325.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-64 md:h-56 lg:h-64"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.4623694222787!2d78.4759637748537!3d13.629614786749606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1747402193682!5m2!1sen!2sin"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  
+
+    <!-- Bottom Section: Links + Logo + Social Icons -->
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 text-center md:text-left">
+      
+      <!-- Logo and Copyright -->
+      <div>
+        <h4 class="text-xl font-bold text-white">Creomind Innovations</h4>
+        <p class="text-sm text-gray-400">&copy; 2025. All rights reserved.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="space-x-6">
+        <a href="about.html" class="text-sm hover:text-blue-400 transition duration-300">About</a>
+        <a href="services.html" class="text-sm hover:text-blue-400 transition duration-300">Services</a>
+        <a href="careers.html" class="text-sm hover:text-blue-400 transition duration-300">Careers</a>
+        <a href="contact.html" class="text-sm hover:text-blue-400 transition duration-300">Contact</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex space-x-4 text-xl">
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/creomind-innovations" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Custom Fade-in Animation (if not using animate.css) -->
+<style>
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable dragging content
+  document.addEventListener('dragstart', event => event.preventDefault());
+
+  // Disable specific key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I or J or C
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + U, Ctrl + S, Ctrl + P, Ctrl + C
+    if ((e.ctrlKey || e.metaKey) && ['U', 'S', 'P', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl + A (select all)
+    if ((e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'A') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable text selection
+  document.addEventListener('selectstart', event => event.preventDefault());
+</script>
+
+</body>
+</html>
